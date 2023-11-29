@@ -1,0 +1,17 @@
+plugins {
+    id "java"
+    id "org.openjfx.javafxplugin" version "0.1.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "21.0.1"
+    modules = ["javafx.graphics", "javafx.controls"]
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
