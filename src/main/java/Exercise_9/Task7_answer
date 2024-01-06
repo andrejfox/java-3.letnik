@@ -1,0 +1,11 @@
+Vprašanje:
+Kaj lahko poveste o dosegljivosti te spremenljivke? Je dosegljiva iz glavne metode, je dosegljiva v
+metodi povecajI ? Jo lahko na obeh mestih spremenite ? Ali lahko trdimo, da je razredna 'globalna'
+znotraj nekega razreda ? Ali jo lahko deklariramo in/ali inicializiramo znotraj poljubne metode ?
+
+
+Odgovor:
+Spremenljivka RAZREDNA je dosegljiva v vseh metodah, saj je definirana na njivoju razreda.
+Predpona static pomeni, da se ne more spreminjati na njivoju razreda. Postane Konstanta
+Če je spremenljivka globalna na njivoju razreda je dosegljiva znotraj celotnega razreda
+Ne. Če bi spremenljivko deklarirali znotraj metode ostane v metodi. Tovrstna deklaracija je edini način, da ostane enaka in dosegljiva skozi celoten razred.
