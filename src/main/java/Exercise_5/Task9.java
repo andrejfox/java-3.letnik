@@ -10,6 +10,8 @@ public class Task9 {
             val1 = val1-val2;
         }
 
+
+
         int height = 21;
 
         for (double i = val1; i <= val2; i += 0.1) {
