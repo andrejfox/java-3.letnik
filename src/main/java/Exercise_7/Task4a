@@ -1,0 +1,6 @@
+Sled izvajanja:
+inicializiramo spremenljivbko i (števec)
+nastavimo pogoj
+
+ponovimo 15x:
+Če je i deljivo z 3 ali 4, hkrati pa je deljivo z 5, se izpiše *, ČE NE SE IZPIŠE !

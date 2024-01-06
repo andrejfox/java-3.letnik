@@ -1,0 +1,1 @@
+Pogoj bo vedno true, ker ga v primeru, da je bil prej false obrne in v primeru, da je true ne obrne (manjši if stavek)

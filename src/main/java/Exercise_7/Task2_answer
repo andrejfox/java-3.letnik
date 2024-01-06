@@ -1,0 +1,18 @@
+Program nastavi sprmenljivko i na 4
+Nato izpiše "To je repeat oz. do-while zanka ?tevilka" na koncu pa doda vrednost i
+I poveča za 2 in ponovno izpiše zgornji stavek.
+To počne, dokler i ni enak 20
+Takrat izpiše še konec zanke
+
+
+
+Končni izpis:
+To je repeat oz. do-while zanka ?tevilka    4
+To je repeat oz. do-while zanka ?tevilka    6
+To je repeat oz. do-while zanka ?tevilka    8
+To je repeat oz. do-while zanka ?tevilka   10
+To je repeat oz. do-while zanka ?tevilka   12
+To je repeat oz. do-while zanka ?tevilka   14
+To je repeat oz. do-while zanka ?tevilka   16
+To je repeat oz. do-while zanka ?tevilka   18
+ Konec zanke

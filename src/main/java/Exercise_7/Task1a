@@ -1,0 +1,8 @@
+Sled izvajanja:
+
+Program nastavi spremenljivko x na 'O'
+Program nastavi konstanto y na 'A'
+Program nato dvakrat zmanjša x, kar zamakne črko na M (2 mesti nazaj) in jo izpiše.
+Program za 2 zmanjšuje spremenljivko x dokler ta ni manjša ali enaka konstanti A. Končni izpis je zato:
+OMKIGECA
+
