@@ -34,7 +34,7 @@ public class Task2 extends Application {
             int x = i * sqWidth;
             int y = i * sqHeight;
 
-            getRandomColour(gc);
+            gc.setStroke(Color.color(Math.random(), Math.random(), Math.random()));
             gc.strokeRect(x, y, sqWidth, sqHeight);
         }
 
@@ -42,39 +42,8 @@ public class Task2 extends Application {
             int x = i * sqWidth;
             int y = (15 - i) * sqHeight + 195;
 
-            getRandomColour(gc);
+            gc.setStroke(Color.color(Math.random(), Math.random(), Math.random()));
             gc.strokeRect(x, y, sqWidth, sqHeight);
-        }
-    }
-
-    private void getRandomColour(GraphicsContext gc) {
-        switch ((int) (Math.random() * 7)) {
-            case 0:
-                gc.setStroke(Color.BLUE);
-                break;
-
-            case 1:
-                gc.setStroke(Color.VIOLET);
-                break;
-
-            case 2:
-                gc.setStroke(Color.BURLYWOOD);
-                break;
-
-            case 3:
-                gc.setStroke(Color.CYAN);
-                break;
-
-            case 4:
-                gc.setStroke(Color.CORAL);
-                break;
-
-            case 6:
-                gc.setStroke(Color.MAROON);
-                break;
-
-            default:
-                break;
         }
     }
 }

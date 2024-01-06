@@ -32,39 +32,8 @@ public class Task1 extends Application {
             int yCenter = 200;
             int circleSize = 150 - i * 5;
 
-            getRandomColour(gc);
+            gc.setStroke(Color.color(Math.random(), Math.random(), Math.random()));
             gc.strokeOval(xCenter - (double) circleSize / 2, yCenter - (double) circleSize / 2, circleSize, circleSize);
-        }
-    }
-
-    private void getRandomColour(GraphicsContext gc) {
-        switch ((int) (Math.random() * 7)) {
-            case 0:
-                gc.setStroke(Color.BLUE);
-                break;
-
-            case 1:
-                gc.setStroke(Color.ALICEBLUE);
-                break;
-
-            case 2:
-                gc.setStroke(Color.BURLYWOOD);
-                break;
-
-            case 3:
-                gc.setStroke(Color.CYAN);
-                break;
-
-            case 4:
-                gc.setStroke(Color.CORAL);
-                break;
-
-            case 6:
-                gc.setStroke(Color.MAROON);
-                break;
-
-            default:
-                break;
         }
     }
 }

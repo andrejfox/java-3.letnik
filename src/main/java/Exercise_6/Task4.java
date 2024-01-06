@@ -5,7 +5,6 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class Task4 extends Application {
@@ -32,7 +31,6 @@ public class Task4 extends Application {
         int canvasHeight = (int) canvas.getHeight();
         int[] initials = {0, -canvasHeight, -canvasWidth, 0};
 
-        gc.setStroke(Color.BLACK);
         fractal(Math.min(canvasWidth, canvasHeight), canvasWidth, canvasHeight, canvasWidth, canvasHeight, initials, gc);
     }
 
