@@ -10,11 +10,9 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task3 extends Application {
+public class Task4 extends Application {
     public void start(Stage stage) {
-        final int num = 1487503;
-        final int radij = 25;
-        final int offset = 50;
+        final int num = 1254732;
         int digits = countDigits(num);
 
         if (digits < 2 || digits > 8 ) {
@@ -33,21 +31,26 @@ public class Task3 extends Application {
         }
 
         Group root = new Group();
-        Scene scene = new Scene(root, max * radij * 2, digits * radij * 2);
+
+        int radij;
+        int offset = 1;
+        for (int i = 0; i < digits; i++) {
+            radij = 15 + list.get(i) * 15;
+            Circle currentCircle = new Circle();
+            currentCircle.setCenterX(offset + radij);
+            currentCircle.setCenterY(15 + max * 15);
+            currentCircle.setRadius(radij);
+            currentCircle.setFill(Color.color(Math.random(), Math.random(), Math.random()));
+            root.getChildren().add(currentCircle);
+            offset += radij * 2;
+        }
+
+        Scene scene = new Scene(root, offset, (15 + max * 15) * 2);
         stage.setTitle("My JavaFX Application");
         stage.setScene(scene);
         stage.show();
-
-        for (int i = 0; i < digits; i++) {
-            Circle currentCircle = new Circle();
-            currentCircle.setCenterX(list.get(i) * offset + radij);
-            currentCircle.setCenterY(radij + i * radij * 2);
-            currentCircle.setRadius(radij);
-            currentCircle.setFill(Color.BLACK);
-            root.getChildren().add(currentCircle);
-        }
     }
-
+    
     static int countDigits(int num) {
         if (num == 0) return 1;
 
