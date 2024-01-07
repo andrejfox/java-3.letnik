@@ -1,4 +1,4 @@
-package Exercise_7;
+package Exercise_7.a;
 public class Task5 {
     public static void main(String[] args) {
         int number = Integer.parseInt(args[0]); // Replace 42 with the integer you want to convert

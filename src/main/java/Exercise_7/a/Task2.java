@@ -1,4 +1,4 @@
-package Exercise_7;
+package Exercise_7.a;
 
 public class Task2 {
         public static void main(String[] args){

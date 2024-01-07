@@ -1,0 +1,12 @@
+Sled izvajanja:
+
+nastavimo spremenljivke
+
+preberemo stevilo
+
+ponavljamo dokler je število večje od 0:
+    preberemo prvo števko s pomočjo množiteljev in nato drugo in tretjo in tako naprej.
+
+
+na koncu izpišemo toliko zvezdic kot je števka.
+Napaka se zgodi, ker izpis zgleda 11* 22**, namesto 1*1, 2**2
