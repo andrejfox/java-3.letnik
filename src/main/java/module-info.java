@@ -6,4 +6,5 @@ module module_for_javafx {
 
     opens Exercise_4 to javafx.graphics;
     opens Exercise_6 to javafx.graphics;
+    opens Exercise_7.b to javafx.graphics;
 }

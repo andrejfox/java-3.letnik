@@ -1,4 +1,4 @@
-package Exercise_9;
+package Exercise_8;
 
 public class Task7 {
     static int razredna = 22;

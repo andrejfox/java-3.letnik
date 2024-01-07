@@ -5,14 +5,15 @@ public class Task5 {
 
         // Binary representation
         String binary = Integer.toBinaryString(number);
-        System.out.println("Binary: " + binary);
+        System.out.println("Binarno: " + binary);
 
         // Hexadecimal representation
         String hexadecimal = Integer.toHexString(number);
-        System.out.println("Hexadecimal: 0x" + hexadecimal);
+        System.out.println("Sestnajstisko: 0x" + hexadecimal);
 
         // Octal representation
         String octal = Integer.toOctalString(number);
-        System.out.println("Octal: 0" + octal);
+        System.out.println("Oktalno: 0" + octal);
+
     }
 }
