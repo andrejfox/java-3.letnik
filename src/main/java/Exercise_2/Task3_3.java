@@ -7,6 +7,6 @@ public class Task3_3 {
 
         int difference = arg1 - arg2;
 
-        System.out.printf("Razlika števil %s in %s znaša %s", arg1, arg2, difference);
+        System.out.printf("Razlika stevil %s in %s znasa %s", arg1, arg2, difference);
     }
 }

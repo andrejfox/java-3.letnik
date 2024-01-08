@@ -27,7 +27,7 @@ public class Task7 {
         if (mach3) numberOfMatches++;
         if (mach4) numberOfMatches++;
 
-        System.out.println("Vneseni števili se ujemata v " + numberOfMatches + "-ih spodnjih bitih.");
+        System.out.println("Vneseni stevili se ujemata v " + numberOfMatches + "-ih spodnjih bitih.");
         System.out.printf("%" + (Math.max(lastCharIndex1, lastCharIndex2) + 1) + "s\n", binaryStringOfNumber1);
         System.out.printf("%" + (Math.max(lastCharIndex1, lastCharIndex2) + 1) + "s", binaryStringOfNumber2);
     }

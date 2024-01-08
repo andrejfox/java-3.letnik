@@ -7,6 +7,6 @@ public class Task3_1 {
 
         int sum = arg1 + arg2;
 
-        System.out.printf("Vsota števil %s in %s znaša %s", arg1, arg2, sum);
+        System.out.printf("Vsota stevil %s in %s znasa %s", arg1, arg2, sum);
     }
 }

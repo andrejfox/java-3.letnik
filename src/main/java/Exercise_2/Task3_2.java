@@ -7,6 +7,6 @@ public class Task3_2 {
 
         int product = arg1 * arg2;
 
-        System.out.printf("Produkt števil %s in %s znaša %s", arg1, arg2, product);
+        System.out.printf("Produkt stevil %s in %s znasa %s", arg1, arg2, product);
     }
 }

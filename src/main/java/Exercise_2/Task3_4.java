@@ -7,6 +7,6 @@ public class Task3_4 {
 
         double quotient = arg1 / arg2;
 
-        System.out.printf("Količnik števil %s in %s znaša %s", arg1, arg2, quotient);
+        System.out.printf("Kolicnik stevil %s in %s znasa %s", arg1, arg2, quotient);
     }
 }
