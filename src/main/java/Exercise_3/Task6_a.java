@@ -15,11 +15,11 @@ public class Task6_a {
             boolean naRobuKvadrata = (x == x1 || x == x2 || y == y1 || y == y2);
 
             if (znotrajKvadrata) {
-                System.out.println("Točka leži znotraj kvadrata.");
+                System.out.println("Tocka lezi znotraj kvadrata.");
             } else if (naRobuKvadrata) {
-                System.out.println("Točka leži na robu kvadrata.");
+                System.out.println("Tocka lezi na robu kvadrata.");
             } else {
-                System.out.println("Točka leži izven kvadrata.");
+                System.out.println("Tocka lezi izven kvadrata.");
             }
         }
 }

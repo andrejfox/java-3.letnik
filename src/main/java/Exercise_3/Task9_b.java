@@ -14,12 +14,12 @@ public class Task9_b {
         double ceil2 = Math.ceil(število2);
         double ceil3 = Math.ceil(število3);
 
-        System.out.println("Floor številke");
+        System.out.println("Floor stevilke");
         System.out.println( floor1);
         System.out.println( floor2);
         System.out.println( floor3);
 
-        System.out.println("Ceil številke");
+        System.out.println("Ceile stevilke");
         System.out.println(ceil1);
         System.out.println(ceil2);
         System.out.println(ceil3);

@@ -8,13 +8,13 @@ public class Task7 {
         int y2 = Integer.parseInt(args[3]);
 
         int stranica_kvadrata = Math.abs(x2 - x1) * Math.abs(y2 - y1);
-        System.out.println("Ploščina kvadrata: " + stranica_kvadrata);
+        System.out.println("Ploscina kvadrata: " + stranica_kvadrata);
 
         int polmer_kroga = Math.min(Math.abs(x2 - x1), Math.abs(y2 - y1)) / 2;
         double ploscina_kroga = Math.PI * polmer_kroga * polmer_kroga;
-        System.out.println("Ploščina območja z največjo krožnico: " + ploscina_kroga);
+        System.out.println("Ploscina obmocja z najvecjo kroznico: " + ploscina_kroga);
 
         double ploscina_trikotnika = (Math.pow(polmer_kroga, 2) * Math.sqrt(3)) / 4;
-        System.out.println("Ploščina največjega enakostraničnega trikotnika: " + ploscina_trikotnika);
+        System.out.println("Ploscina najvecjega enakostranicnega trikotnika: " + ploscina_trikotnika);
     }
 }
