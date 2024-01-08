@@ -6,7 +6,7 @@ public class Task2 {
             do {
                 System.out.print("To je ");
                 System.out.print("repeat oz. do-while zanka ");
-                System.out.printf("številka %4d",i);
+                System.out.printf("stevilka %4d",i);
                 System.out.println();
                 i = i + 2;
             } while ( i!=20 );
