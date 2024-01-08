@@ -18,7 +18,7 @@ public class Task4 extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Canvas");
         Group root = new Group();
-        canvas = new Canvas(500, 800);
+        canvas = new Canvas(400, 400);
         GraphicsContext gc = canvas.getGraphicsContext2D();
         drawStuff(gc);
         root.getChildren().add(canvas);
