@@ -1,15 +1,19 @@
 package Exercise_8;
 
-public class Task1c {
+public class Task1_a {
     public static void main(String[] args) {
-        izrisiKocko(5);
+        izrisiKocko();
+        izrisiKocko();
+        izrisiKocko();
+        izrisiKocko();
+        izrisiKocko();
 
     }
-    public static void izrisiKocko(int counter) {
-        for (; counter>0; counter--){
+    public static void izrisiKocko() {
+
         System.out.println (" -----");
         System.out.println ("|  *  |");
         System.out.println ("|     |");
         System.out.println (" -----");
-    }}
+    }
 }

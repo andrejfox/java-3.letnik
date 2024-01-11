@@ -53,8 +53,6 @@ public class Task2 extends Application {
         int deltaX = x1 - x0;
         int deltaY = y1 - y0;
 
-        int mainLineLength = (int) Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-
         int x2 = x0 + deltaX / 3;
         int y2 = y0 + deltaY / 3;
         int x3 = x0 + deltaX * 2 / 3;

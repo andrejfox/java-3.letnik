@@ -1,6 +1,6 @@
 package Exercise_8;
 
-public class Task4a {
+public class Task4_a {
     public static void main(String[] args) {
         izpisi(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
     }
