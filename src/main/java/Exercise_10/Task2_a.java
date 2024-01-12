@@ -19,11 +19,11 @@ public class Task2_a {
     }
 
     public static char[] generateSamoglasniki(int stSamoglasnikov) {
-        Random randi = new Random();
+        Random randy = new Random();
         char[] arr = new char[stSamoglasnikov];
 
         for (int i = 0; i < stSamoglasnikov; i++) {
-            arr[i] = "aeiou".charAt(randi.nextInt(5));
+            arr[i] = "aeiou".charAt(randy.nextInt(5));
         }
 
         return arr;

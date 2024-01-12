@@ -3,9 +3,9 @@ package Exercise_10;
 import java.util.Random;
 
 public class Task2_b {
-    private static final Random randi = new Random();
+    private static final Random randy = new Random();
     public static void main(String[] args) {
-        char[] arr = generateSamoglasniki(randi.nextInt(11) + 10);
+        char[] arr = generateSamoglasniki(randy.nextInt(11) + 10);
 
         System.out.print("Vsebina tabele:");
         for (char c : arr) {
@@ -22,7 +22,7 @@ public class Task2_b {
         char[] arr = new char[stSamoglasnikov];
 
         for (int i = 0; i < stSamoglasnikov; i++) {
-            arr[i] = "aeiou".charAt(randi.nextInt(5));
+            arr[i] = "aeiou".charAt(randy.nextInt(5));
         }
 
         return arr;
