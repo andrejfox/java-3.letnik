@@ -17,7 +17,7 @@ public class Example extends Application {
     /** metoda start - ne spreminjaj */
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Test Canvas");
+        primaryStage.setTitle("Test.Test Canvas");
         Group root = new Group();
         Canvas canvas = new Canvas(600, 450);
         GraphicsContext gc = canvas.getGraphicsContext2D();

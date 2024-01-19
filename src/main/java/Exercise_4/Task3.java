@@ -17,7 +17,7 @@ public class Task3 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Test Canvas");
+        primaryStage.setTitle("Test.Test Canvas");
         Group root = new Group();
         canvas = new Canvas(800, 450); // Assign the Canvas to the class variable
         GraphicsContext gc = canvas.getGraphicsContext2D();
@@ -31,8 +31,8 @@ public class Task3 extends Application {
         int canvasWidth = (int) canvas.getWidth();
         int canvasHeight = (int) canvas.getHeight();
 
-        int halfWidth = (int) canvasWidth / 2;
-        int halfHeight = (int) canvasHeight / 2;
+        int halfWidth = canvasWidth / 2;
+        int halfHeight = canvasHeight / 2;
 
         gc.setStroke(Color.BLUE);
         gc.setLineWidth(1);

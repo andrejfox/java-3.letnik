@@ -1,11 +1,10 @@
-package Exercise_10;
+package Exercise_10_1;
 
 import java.util.Random;
 
-public class Task2_b {
-    private static final Random randy = new Random();
+public class Task2_a {
     public static void main(String[] args) {
-        char[] arr = generateSamoglasniki(randy.nextInt(11) + 10);
+        char[] arr = generateSamoglasniki(20);
 
         System.out.print("Vsebina tabele:");
         for (char c : arr) {
@@ -13,12 +12,14 @@ public class Task2_b {
         }
         System.out.println();
 
-        System.out.printf("Prvi dve crki: %s %s\n", arr[0], arr[1]);
+        System.out.printf("Prvi dve crki: %s %s", arr[0], arr[1]);
+        System.out.println();
 
         System.out.printf("Zadnji dve crki: %s %s", arr[arr.length - 2], arr[arr.length - 1]);
     }
 
     public static char[] generateSamoglasniki(int stSamoglasnikov) {
+        Random randy = new Random();
         char[] arr = new char[stSamoglasnikov];
 
         for (int i = 0; i < stSamoglasnikov; i++) {

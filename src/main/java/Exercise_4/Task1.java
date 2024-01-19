@@ -20,7 +20,7 @@ public class Task1 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Test Canvas");
+        primaryStage.setTitle("Test.Test Canvas");
         Group root = new Group();
         canvas = new Canvas(800, 450); // Assign the Canvas to the class variable
         GraphicsContext gc = canvas.getGraphicsContext2D();
