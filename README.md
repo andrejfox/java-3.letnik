@@ -1,3 +1,3 @@
 # Java
-### Small repository for managing my Java homework. :) >:3
+### Small repository for managing my Java homework.
 ![gif](java.gif)
