@@ -11,6 +11,6 @@ public class Runner {
 
         magic.insertionSort();
         System.out.println(Arrays.toString(magic.array));
-        System.out.println(magic.counter);
+        System.out.println(magic.compareCounter);
     }
 }
