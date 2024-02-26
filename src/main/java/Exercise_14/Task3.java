@@ -53,26 +53,42 @@ public class Task3 extends Task2 {
     }
     @Override
     public void insertionSort() {
+        boolean valCheck = false;
         for (int i = 1; i < array.length; i++) {
             int target = array[i];
             int beforeTarget = i - 1;
+            compareCounter++;
             while (beforeTarget >= 0 && array[beforeTarget] > target) {
                 array[beforeTarget + 1] = array[beforeTarget];
                 compareCounter++;
+                valCheck = true;
                 swapCounter++;
                 beforeTarget--;
             }
+            if (valCheck) {
+                compareCounter--;
+                valCheck = false;
+            }
+
             array[beforeTarget + 1] = target;
         }
     }
     @Override
     public void selectionSort() {
+        boolean valCheck = false;
         for (int i = 0; i < array.length - 1; i++) {
             int minIndex = i;
+            compareCounter++;
             for (int targetIndex = i + 1; targetIndex < array.length; targetIndex++) {
                 if (array[targetIndex] < array[minIndex]) minIndex = targetIndex;
                 compareCounter++;
+                valCheck = true;
             }
+            if (valCheck) {
+                compareCounter--;
+                valCheck = false;
+            }
+
             int temp = array[minIndex];
             array[minIndex] = array[i];
             array[i] = temp;
