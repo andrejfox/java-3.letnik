@@ -1,30 +1,43 @@
 package Exercise_15;
 
-public class Stack {
-    private final int[] stack;
-    private int pointer = 0;
+public class Stack2 extends Stack{
+    final int[] stack;
+    private int pointer;
+    int start;
+    private int size;
 
-    public Stack() {
+    public Stack2() {
         this(10);
     }
 
-    public Stack(int size) {
+    public Stack2(int size) {
         this.stack = new int[size];
     }
 
+    public Stack2(int[] arr, int start, int size) {
+        this.stack = arr;
+        this.start = start;
+        this.pointer = start;
+        this.size = size;
+    }
+
+    @Override
     public int size() {
-        return stack.length;
-    }
-    public int getPointer() {
-        return pointer;
+        return size;
     }
 
+    @Override
     public boolean isEmpty() {
-        return pointer == 0;
+        return pointer == start;
     }
 
+    @Override
     public boolean isFull() {
         return pointer == stack.length;
+    }
+
+    public int getPointer() {
+        return pointer;
     }
 
     public void push(int num) {
