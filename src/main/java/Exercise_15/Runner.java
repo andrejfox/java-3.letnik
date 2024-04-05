@@ -1,11 +1,20 @@
 package Exercise_15;
 
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.stage.Stage;
+
 import java.util.Arrays;
 
-public class Runner {
+public class Runner extends Application {
+    private static Stage stage;
     public static void main(String[] args) {
-        naloga2();
+//        naloga2();
 //        naloga3();
+        naloga5(args);
     }
 
     public static void naloga2() {
@@ -40,51 +49,63 @@ public class Runner {
     }
 
     public static void naloga3() {
-        KroznaVrsta vrsta = new KroznaVrsta(5);
+        CircleBuffer buffer = new CircleBuffer(5);
 
-        System.out.printf("peek %s | vrsta: %s\n", vrsta.peek(), vrsta.show());
-        System.out.printf("push %s | vrsta: %s\n", vrsta.pop(), vrsta.show());
-        System.out.printf("vrsta.isEmpty() -> %s\n", vrsta.isEmpty());
+        System.out.printf("peek %s | buffer: %s\n", buffer.peek(), buffer.show());
+        System.out.printf("push %s | buffer: %s\n", buffer.pop(), buffer.show());
+        System.out.printf("buffer.isEmpty() -> %s\n", buffer.isEmpty());
 
         System.out.println(" - - - - - - - - - - - - - - - - ");
 
-        vrsta.push(2);
-        System.out.printf("push %s | vrsta: %s\n", 2, vrsta.show());
-        vrsta.push(3);
-        vrsta.push(4);
-        vrsta.push(5);
+        buffer.push(2);
+        System.out.printf("push %s | buffer: %s\n", 2, buffer.show());
+        buffer.push(3);
+        buffer.push(4);
+        buffer.push(5);
         System.out.println(". . . . .");
-        vrsta.push(6);
-        System.out.printf("push %s | vrsta: %s\n", 6, vrsta.show());
+        buffer.push(6);
+        System.out.printf("push %s | buffer: %s\n", 6, buffer.show());
 
         System.out.println(" - - - - - - - - - - - - - - - - ");
 
-        System.out.printf("pop %s | vrsta: %s\n", vrsta.pop(), vrsta.show());
-        vrsta.pop();
-        vrsta.pop();
+        System.out.printf("pop %s | buffer: %s\n", buffer.pop(), buffer.show());
+        buffer.pop();
+        buffer.pop();
         System.out.println(". . . . .");
-        System.out.printf("pop %s | vrsta: %s\n", vrsta.pop(), vrsta.show());
+        System.out.printf("pop %s | buffer: %s\n", buffer.pop(), buffer.show());
 
         System.out.println(" - - - - - - - - - - - - - - - - ");
 
-        System.out.printf("peek %s | vrsta: %s\n", vrsta.peek(), vrsta.show());
+        System.out.printf("peek %s | buffer: %s\n", buffer.peek(), buffer.show());
 
         System.out.println(" - - - - - - - - - - - - - - - - ");
 
-        vrsta.push(7);
-        System.out.printf("push %s | vrsta: %s\n", 7, vrsta.show());
-        vrsta.push(8);
-        vrsta.push(9);
+        buffer.push(7);
+        System.out.printf("push %s | buffer: %s\n", 7, buffer.show());
+        buffer.push(8);
+        buffer.push(9);
         System.out.println(". . . . .");
-        vrsta.push(10);
-        System.out.printf("push %s | vrsta: %s\n", 10, vrsta.show());
+        buffer.push(10);
+        System.out.printf("push %s | buffer: %s\n", 10, buffer.show());
 
         System.out.println(" - - - - - - - - - - - - - - - - ");
 
         try {
-            vrsta.push(11);
+            buffer.push(11);
         } catch (IllegalStateException err) {
-            System.out.println("vrsta.push(11) -> " + err);
+            System.out.println("buffer.push(11) -> " + err);
         }
+    }
+
+    @Override
+    public void start(Stage primaryStage) {
+        stage = primaryStage;
+        Group root = new Group();
+        Canvas canvas = new Canvas(600, 450);
+        root.getChildren().add(canvas);
+    }
+
+    public static void naloga5(String[] args) {
+        Application.launch(FxBuffer.class, args);
     }
 }

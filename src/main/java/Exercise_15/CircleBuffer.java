@@ -2,18 +2,18 @@ package Exercise_15;
 
 import java.util.Arrays;
 
-public class KroznaVrsta {
-    private final int[] vrsta;
+public class CircleBuffer {
+    private final int[] buffer;
     private int guard = 0;
     private int pointer = 0;
     private boolean empty = true;
 
-    public KroznaVrsta(int size) {
-        this.vrsta = new int[size];
+    public CircleBuffer(int size) {
+        this.buffer = new int[size];
     }
 
     public String show() {
-        return Arrays.toString(vrsta);
+        return Arrays.toString(buffer);
     }
 
     public boolean isEmpty() {
@@ -25,7 +25,7 @@ public class KroznaVrsta {
     }
 
     public int peek() {
-        return isEmpty() ? 1 : vrsta[guard];
+        return isEmpty() ? 1 : buffer[guard];
     }
 
     public int pop() {
@@ -33,27 +33,27 @@ public class KroznaVrsta {
             return -1;
         }
 
-        if (guard == vrsta.length - 1) {
+        if (guard == buffer.length - 1) {
             if (pointer == 0) {
                 empty = true;
             }
-            int ret = vrsta[guard];
+            int ret = buffer[guard];
             guard = 0;
             return ret;
         }
 
         if (pointer - 1 == guard) empty = true;
-        return vrsta[guard++];
+        return buffer[guard++];
     }
 
     public void push(int num) {
         if (isFull()) {
-            throw new IllegalStateException("vrsta is full!");
+            throw new IllegalStateException("Buffer is full!");
         }
 
-        vrsta[pointer++] = num;
+        buffer[pointer++] = num;
 
-        if (pointer == vrsta.length) {
+        if (pointer == buffer.length) {
             pointer = 0;
         }
         empty = false;

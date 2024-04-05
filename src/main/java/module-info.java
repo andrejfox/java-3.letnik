@@ -11,4 +11,5 @@ module module_for_javafx {
     opens Exercise_7.b to javafx.graphics;
     opens Exercise_11 to javafx.graphics;
     opens Exercise_11.Demo to javafx.graphics;
+    opens Exercise_15 to javafx.graphics;
 }
