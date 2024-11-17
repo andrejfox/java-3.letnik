@@ -12,4 +12,5 @@ module module_for_javafx {
     opens tretjiLetnik.Exercise_11 to javafx.graphics;
     opens tretjiLetnik.Exercise_11.Demo to javafx.graphics;
     opens tretjiLetnik.Exercise_15 to javafx.graphics;
+    opens cetrtiLetnik.Exercise_4 to javafx.graphics;
 }
